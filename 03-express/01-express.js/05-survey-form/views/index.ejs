@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Form</title>
+</head>
+<body>
+	<form action="/result" method="post">
+		<div id="name">
+			<label for="name">Your Name: </label>
+			<input type="text" name="name" id="">
+		</div>
+		<div id="location">
+			<label for="location">Dojo Location: </label>
+			<select name="dojoLocation">
+        <option value="Berkeley, CA">Berkeley, CA</option>
+        <option value="Boise, ID">Boise, ID</option>
+        <option value="Chicago, IL">Chicago, IL</option>
+        <option value="Dallas, TX">Dallas, TX</option>
+        <option value="Los Angeles, CA">Los Angeles, CA</option>
+        <option value="Organge County, CA">Orange County, CA</option>
+        <option value="Seattle, WA">Seattle, WA</option>
+        <option value="Silicon Valley, CA">Silicon Valley, CA</option>
+        <option value="Tulsa, OK">Tulsa, OK</option>
+			  <option value="Tyson's Corner, VA">Tyson's Corner, VA</option>
+			</select>
+		</div>
+		<div id="language">
+			<label for="language">Favorite Language Stack: </label>
+			<select name="favoriteLanguage">
+			  <option value=".NET/C#">.NET/C#</option>
+			  <option value="Ruby on Rails">Ruby on Rails</option>
+			  <option value="Python">Python</option>
+        <option value="MEAN">MEAN</option>
+        <option value="Java">Java</option>
+			</select>
+		</div>
+		<div id="comment">
+			<label for="comment">Comment (optional):</label>
+			<textarea name="comment"></textarea>
+		</div>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

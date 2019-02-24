@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Epic Button Game</title>
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="js/index.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+   </head>
+   <body>
+       <div class="container">
+           <h1>The button has been pushed <span id="number">0</span> time(s)</h1>
+           <p>Push the button to update the count</p>
+           <button id="count" style="color:blue;">Push the Epic Button</button>
+           <button id="reset" style="color:red;";">Reset Count</button>
+       </div>
+   </body>
+</html>
