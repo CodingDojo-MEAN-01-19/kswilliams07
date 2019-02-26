@@ -87,10 +87,11 @@ console.log(square(4));
 // This is not working:
 var multiply = (x,y) => x * y;
 // Nor is this working:
-/*var math = (x, y) => let sum = x + y;
-   let product = x * y;
-   let difference = Math.abs(x-y);
-   return [sum, product, difference];
+/*var math = (x, y) => [sum, product, difference]; 
+  let sum = x + y;
+  let product = x * y;
+  let difference = Math.abs(x-y);
+  return [sum, product, difference];
 */
 //could not figure out this one
 
@@ -100,11 +101,12 @@ class Elephant {
   birthday = function(){
      this.age++;
   }
+  updateAge = () => this.age;
 }
 const babar = new Elephant(8);
 setTimeout(babar.birthday, 1000)
 setTimeout(function(){
-  console.log(`Babar's age is ${babar.age}.`)
+  console.log(`Babar's age is ${babar.updateAge()}.`)
   }, 2000)
 // Why didn't babar's age change? Fix this by using an arrow function in the Elephant class.
 
